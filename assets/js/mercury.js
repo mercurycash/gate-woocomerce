@@ -35,7 +35,7 @@ jQuery(function(jQuery){
             jQuery(".woocommerce-error").detach();
             jQuery( "html, body").stop();
             let mail = jQuery("#billing_email").val(),
-                price = merParam.cart_price,
+                price = parseFloat(merParam.cart_price),
                 currency = merParam.currency;
 
             sdk.checkout(price, currency, mail);

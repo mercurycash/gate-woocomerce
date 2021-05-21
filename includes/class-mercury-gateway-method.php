@@ -76,7 +76,7 @@ class Mercury_Gateway_Method extends WC_Payment_Gateway
         $style_url = MERCURY_GATEWAY_URL . "mercury-cash-react/build/static/css/main.d17b8e8c.css";
 
         wp_enqueue_script('woocommerce-mercury-qr', $script_url_qr, array('jquery'),  '4', true );
-        wp_enqueue_script('woocommerce-mercury', $script_url, array('jquery'),  '4', true  );
+        wp_enqueue_script('woocommerce-mercury', $script_url, array('jquery'),  '5', true  );
         wp_enqueue_style('woocommerce-mercury', $style_url, [], 1);
 
         wp_localize_script( 'woocommerce-mercury', 'mercuryParam', array(
